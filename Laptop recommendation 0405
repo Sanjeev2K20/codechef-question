@@ -1,0 +1,49 @@
+#include<iostream>
+#include<algorithm>
+#include<vector>
+using namespace std;
+int main(){
+    int t;
+    cin>>t;
+    while(t--){
+        int n;
+        cin>>n;
+        int arr[n];
+        for(int i=0;i<n;i++){
+            cin>>arr[i];
+        }
+        sort(arr, arr+n);
+        vector<int>v;
+        int A=0;
+        for(int i=0;i<n;i++){
+            if(arr[i]==arr[i+1]){
+                A++;
+            }
+            else{
+                v.push_back(A+ 1);
+                A=0;
+            }
+        }
+        int m= v.size();
+        sort(v.begin(),v.end());
+        if(v[m-1]==v[m-2]){
+            cout<<"CONFUSED"<<endl;
+        }
+        else{
+            int k=(v[m-1])-1;
+            int B=0;
+            for(int i=0;i<n;i++){
+                if(arr[i]==arr[i+1]){
+                   B++; 
+                }
+                else{
+                    if(B==k){
+                        cout<<arr[i]<<endl;
+                        break;
+                    }
+                    B=0;
+                }
+            }
+        }
+    }
+}
