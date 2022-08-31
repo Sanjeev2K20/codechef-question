@@ -1,0 +1,15 @@
+question: https://www.codechef.com/submit/TCKTFINE
+code: https://onlinegdb.com/XS-VdxdH1
+
+#include<iostream>
+using namespace std;
+int main(){
+    int t;
+    cin>>t;
+    while(t--){
+        int x,p,q;
+        cin>>x>>p>>q;
+        int A=(p-q)*x;
+        cout<<A<<endl;
+    }
+}
