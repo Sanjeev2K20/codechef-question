@@ -1,0 +1,16 @@
+Question: https://www.codechef.com/submit/CREDS
+code: https://onlinegdb.com/0YnI5iu-aC
+
+
+#include<iostream>
+using namespace std;
+int main(){
+    int t;
+    cin>>t;
+    while(t--){
+        int x,y,z;
+        cin>>x>>y>>z;
+        int A=4*x+ 2*y;
+        cout<<A<<endl;
+    }
+}
