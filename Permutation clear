@@ -1,0 +1,33 @@
+Question:https://www.codechef.com/problems-old/PERMCLEAR
+code: https://onlinegdb.com/z2Z7LoIwH
+
+
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+    int t;
+    cin>>t;
+    while(t--){
+        int n;
+        cin>>n;
+        int arr[n];
+        unordered_map<int, int>m;
+        for(int i=0;i<n;i++){
+            cin>>arr[i];
+            m[arr[i]]=0;
+        }
+        int M;
+        cin>>M;
+        int brr[M];
+        for(int i=0;i<M;i++){
+            cin>>brr[i];
+            m[brr[i]]++;
+        }
+        for(int i=0;i<n;i++){
+            if(m[arr[i]]==0){
+                cout<<arr[i]<<" ";
+            }
+        }
+        cout<<endl;
+    }
+}
