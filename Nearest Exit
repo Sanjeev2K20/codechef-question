@@ -1,0 +1,19 @@
+Question: https://www.codechef.com/submit/NEARESTEXIT
+code: https://onlinegdb.com/LVL2ocgH4
+
+#include<iostream>
+using namespace std;
+int main(){
+    int t;
+    cin>>t;
+    while(t--){
+        int x;
+        cin>>x;
+        if(x<=50){
+            cout<<"LEFT"<<endl;
+        }
+        else{
+            cout<<"RIGHT"<<endl;
+        }
+    }
+}
