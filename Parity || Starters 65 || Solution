@@ -1,0 +1,19 @@
+Question: https://www.codechef.com/START65D/problems/PAR2
+code: https://onlinegdb.com/xwQLXPY-1
+
+#include<iostream>
+using namespace std;
+int main(){
+    int t;
+    cin>>t;
+    while(t--){
+        int n;
+        cin>>n;
+        if(n%2==0){
+            cout<<"YES"<<endl;
+        }
+        else{
+            cout<<"NO"<<endl;
+        }
+    }
+}
