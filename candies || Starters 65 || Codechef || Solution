@@ -1,0 +1,35 @@
+Question: https://www.codechef.com/START65D/problems/CNDY
+code: https://onlinegdb.com/IXfTfjkIa
+
+
+
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+    int t;
+    cin>>t;
+    while(t--){
+        int n;
+        cin>>n;
+        int m=2*n;
+        int arr[m];
+        for(int i=0;i<2*n;i++){
+            cin>>arr[i];
+        }
+        bool A=0;
+        sort(arr, arr+m);
+        for(int i=0;i<m- 2;i++){
+            if(arr[i]==arr[i+ 1] && arr[i+ 1]==arr[i+ 2]){
+                A=1;
+                break;
+            }
+        }
+        if(A>0){
+            cout<<"NO"<<endl;
+        }
+        else{
+            cout<<"YES"<<endl;
+        }
+    }
+    
+}
