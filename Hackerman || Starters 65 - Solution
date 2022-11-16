@@ -1,0 +1,24 @@
+Question: https://www.codechef.com/START65D/problems/PRIMEDICE
+
+code: https://onlinegdb.com/8ABn0r5WN
+
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+    int t;
+    cin>>t;
+    while(t--){
+        int a,b;
+        cin>>a>>b;
+        int n = a+b;
+        if(n==2 || n==3 || n==5 || n==7 || n==11){
+            cout<<"Alice"<<endl;
+        }
+        else{
+            cout<<"Bob"<<endl;
+        }
+    }
+    
+    
+    
+}
