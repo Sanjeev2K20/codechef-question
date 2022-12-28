@@ -1,0 +1,21 @@
+Question:https://www.codechef.com/START71D/problems/PERFECTTRIO
+code:
+
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+    int t;
+    cin>>t;
+    while(t--){
+        int a,b,c;
+        cin>>a>>b>>c;
+        int A = max({a,b,c});
+        int C = ((a+b+c)- A);
+        if(A==C){
+            cout<<"YES"<<endl;
+        }
+        else{
+            cout<<"NO"<<endl;
+        }
+    }
+}
