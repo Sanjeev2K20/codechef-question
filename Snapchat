@@ -1,0 +1,38 @@
+Question: https://www.codechef.com/START71D/problems/SNAPCHAT
+code:
+
+#include<iostream>
+using namespace std;
+int main(){
+    int t;
+    cin>>t;
+    while(t--){
+        int n;
+        cin>>n;
+        int arr[n];
+        int brr[n];
+        for(int i=0;i<n;i++){
+            cin>>arr[i];
+        }
+        for(int i=0;i<n;i++){
+            cin>>brr[i];
+        }
+        int A=0;
+        int B=0;
+        for(int i=0;i<n;i++){
+            if(arr[i]>0 && brr[i]>0){
+                B++;
+            }
+            else{
+                if(B>A){
+                    A=B;
+                }
+                B=0;
+            }
+            if(B>A){
+                A=B;
+            }
+        }
+        cout<<A<<endl;
+    }
+}
