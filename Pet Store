@@ -1,0 +1,36 @@
+Question: https://www.codechef.com/START71D/problems/PETSTORE
+code: 
+
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+    int t;
+    cin>>t;
+    while(t--){
+        int n;
+        cin>>n;
+        int arr[n];
+        for(int i=0;i<n;i++){
+            cin>>arr[i];
+        }
+        if(n%2!=0){
+            cout<<"NO"<<endl;
+        }
+        else{
+            sort(arr, arr+n);
+            bool k=0;
+            for(int i=0;i<n- 1;i=i+2){
+                if(arr[i]!=arr[i+ 1]){
+                    k=1;
+                    break;
+                }
+            }
+            if(k==0){
+                cout<<"YES"<<endl;
+            }
+            else{
+                cout<<"NO"<<endl;
+            }
+        }
+    }
+}
